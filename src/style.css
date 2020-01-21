@@ -19,6 +19,14 @@
   --green-grey: #7c98a3;
 }
 
+::selection {
+  background-color: #ee090c;
+  color: #fff; }
+
+::-moz-selection {
+  background-color: #ee090c;
+  color: #fff; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -52,7 +60,15 @@ h2 {
 }
 
 .webshop__section {
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.webshop__section:not(:last-child) {
+  background-image: url(/assets/images/humo-dot-horizontal.png);
+  background-repeat: repeat-x;
+  background-position: bottom left;
 }
 
 .input {
@@ -234,6 +250,7 @@ a.logo {
   width: 100%;
   height: 30rem;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .highlight__bottombar {
@@ -272,6 +289,7 @@ a.bottombar__button {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 2rem;
+  text-transform: uppercase;
 }
 
 .book__image {
@@ -282,10 +300,108 @@ a.bottombar__button {
   position: absolute;
   top: 0;
   right: 0;
+  padding: 0 1rem;
+  font-size: 1,5rem;
+  font-weight: bold;
+  background-color: var(--lightest-grey);
+}
+
+.old__price {
+  color: var(--dark-grey);
+  text-decoration: line-through;
+}
+
+.old__price::after {
+  content: ' > ';
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .book__image img {
   max-width: 100%;
+}
+
+.book__author {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #DB3125;
+}
+
+.book__title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+.goto__list {
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  color: var(--black);
+  transition: all .2s;
+}
+
+.goto__list:hover {
+  color: var(--primary-color);
+}
+
+.goto__list::after {
+  content: ' →';
+}
+
+.footer {
+  border-top: 1px solid var(--black);
+  padding-top: 4px;
+}
+
+.footer__container {
+  border-top: 4px solid var(--black);
+  width: 100%;
+}
+
+.footer__column-container {
+  display: grid;
+  width: 100%;
+  max-width: 102.2rem;
+  margin: auto;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer__column {
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-top: 2rem;
+  padding-top: 0;
+  background-image: url(/assets/images/humo-dot.png);
+  background-repeat: repeat-y;
+  background-position: top left;
+}
+
+.footer__column a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: var(--black);
+  padding-top: .5rem;
+  display: inline-block;
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.footer__column a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.footer__column ul {
+  margin-top: 1.5rem;
+}
+
+.footer__column ul + h5 {
+  margin-top: 1.5rem;
+}
+
+.footer h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 input:-webkit-autofill {

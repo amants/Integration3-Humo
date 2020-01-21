@@ -70,6 +70,74 @@
         </div>
         <?php echo $content;?>
       </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <section class="footer__column-container">
+            <article class="footer__column">
+              <h5>Actua</h5>
+              <ul>
+                <li><a href="#">Nu in Humo</a></li>
+                <li><a href="#">De columns</a></li>
+                <li><a href="#">Dossiers</a></li>
+                <li><a href="#">Politiek</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Onze man/vrouw</a></li>
+                <li><a href="#">Eerder in Humo</a></li>
+                <li><a href="#">De eindejaarsvragen</a></li>
+                <li><a href="#">Nu in Humo</a></li>
+              </ul>
+            </article>
+            <article class="footer__column">
+              <h5>Humor</h5>
+              <ul>
+                <li><a href="#">Fotospecials</a></li>
+                <li><a href="#">Cartoons</a></li>
+                <li><a href="#">Uitlaat</a></li>
+                <li><a href="#">(Bulderlacht)</a></li>
+                <li><a href="#">Doe het zelf</a></li>
+                <li><a href="#">Humo's Comedy Cup</a></li>
+              </ul>
+            </article>
+            <article class="footer__column">
+              <h5>Tv/Film</h5>
+              <ul>
+                <li><a href="#">TV-Gids</a></li>
+                <li><a href="#">TV-Tips</a></li>
+                <li><a href="#">TV-Reviews</a></li>
+                <li><a href="#">Filmreviews</a></li>
+                <li><a href="#">De 100 beste films volgens (ES)</a></li>
+              </ul>
+            </article>
+            <article class="footer__column">
+              <h5>Muziek</h5>
+              <ul>
+                <li><a href="#">Concertreviews</a></li>
+                <li><a href="#">CD-Reviews</a></li>
+                <li><a href="#">Humo's Rock Rally</a></li>
+                <li><a href="#">Festivalitis</a></li>
+              </ul>
+            </article>
+            <article class="footer__column">
+              <h5>Boeken</h5>
+              <ul>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Fictie</a></li>
+                <li><a href="#">Non-Fictie</a></li>
+                <li><a href="#">Het lezen zoals het is</a></li>
+                <li><a href="#">De grootste schrijvers van deze tijd</a></li>
+              </ul>
+              <h5>Ga naar</h5>
+              <ul>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Foto's</a></li>
+                <li><a href="#">Wedstrijden</a></li>
+                <li><a href="#">Zoekertjes</a></li>
+                <li><a href="#">Apps</a></li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </footer>
     <?php echo $js; ?>
   </body>
 </html>
