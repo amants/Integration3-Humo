@@ -22,9 +22,13 @@ class ProductsController extends Controller {
         "pageName" => "Webshop"
       ),
     );
-      $this->set('breadcrumbs', $breadcrumbs);
-      $this->set('currentPage', "Dashboard");
-      $this->set('title', "Webshop");
+
+    $books = $this->productsDAO->selectByCategory(1);
+
+    $this->set('breadcrumbs', $breadcrumbs);
+    $this->set('books', $books);
+    $this->set('currentPage', "Dashboard");
+    $this->set('title', "Webshop");
     // if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
     //   // $players = $this->playerDAO->search($_GET['term']);
     //   $this->set('title', "Webshop");

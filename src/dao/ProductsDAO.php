@@ -12,12 +12,12 @@ class ProductsDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  public function selectById($id){
-    $sql = "SELECT * FROM `players` WHERE `Id` = :id";
+  public function selectByCategory($id){
+    $sql = "SELECT * FROM `products` JOIN `categories` ON products.categories=categories.cat_id WHERE `categories` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);
     $stmt->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
   public function selectTopPlayers($max=10){
