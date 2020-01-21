@@ -28,12 +28,13 @@
         </div>
       </div>
       <div class="nav__mainnav">
+        <input type="checkbox" class="hidden" id="mobileNavOpen" />
         <ul class="mainnav__container">
           <li><a href="#">Home</a></li>
           <li><a href="#">Actua</a></li>
           <li><a href="#">Humor</a></li>
           <li><a href="#">TV/Film</a></li>
-          <li><h1><a class="logo" href="/">HUMO</a></h1></li>
+          <li class="list__logo"><h1><a class="logo" href="/">HUMO</a></h1><div class="mobile__right__nav"><a href="/">ACC</a><a href="/">Cart</a><label for="mobileNavOpen" class="hamburger" href="/">|||</label></div></li>
           <li class="mainnav__leftside-highlight"><a href="#">Muziek</a></li>
           <li><a href="#">Boeken</a></li>
           <li><a href="#" class="active">Webshop</a></li>
@@ -136,6 +137,32 @@
               </ul>
             </article>
           </section>
+          <div class="footer__bottom">
+            <div class="bottom__container">
+              <ul>
+                <li><a href="#">Privacybeleid</a></li>
+                <li><a href="#">Wedstrijdreglement</a></li>
+                <li><a href="#">Adverteren</a></li>
+                <li><a href="#">Gebruiksvoorwaarden</a></li>
+                <li><a href="#">Cookiebeleid</a></li>
+                <li><a href="#">Cookie instellingen</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Colofon</a></li>
+                <li><a href="#">f</a><a href="#">t</a></li>
+              </ul>
+              <div class="footer__copyright">
+                <div>
+                  <img src="https://www.humo.be/a/i/dpgmedia-logo-white-5ccd50c651.png" alt="">
+                  <p>&copy; 2020 DPG Media</p>
+                </div>
+                <div>
+                  <img src="https://www.humo.be/a/i/logo-jep.jpg" alt="">
+                  <img src="https://www.humo.be/a/i/logo-rvdj.jpg" alt="">
+                  <img src="https://www.humo.be/a/i/logo-cim.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     <?php echo $js; ?>
